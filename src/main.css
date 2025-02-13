@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'raleway-dotted';
+    src: url('./assets/RalewayDots-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'kgprimary';
+    src: url('./assets/KGPrimaryDots.ttf');
+}
+
+@font-face {
+    font-family: 'kgdotslined';
+    src: url('./assets/KGPrimaryDotsLined.ttf');
+}
+
+@font-face {
+    font-family: 'kgdotslinedalt';
+    src: url('./assets/KGPrimaryDotsLinedAlt.ttf');
+}
+
+@font-face {
+    font-family: 'school';
+    src: url('./assets/SchoolScriptDashed.ttf');
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url('./assets/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'birthstone';
+    src: url('./assets/Birthstone/Birthstone-Regular.ttf');
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    font-family: 'raleway-dotted';
+    font-family: 'kgdotslined';
+    font-family: 'kgdotslinedalt';
+    font-family: 'school';
+    font-family: 'pacifico';
+    font-family: 'birthstone';
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+section {
+    position: relative;
+}
+
+section > .row .calitem {
+    display: inline-block;
+    text-align: center;
+}
+
+section > * {
+    text-align: center;
+}
+
+section p:first-of-type {
+    font-family: school;
+}
+
+section > .main-letter {
+    font-size: 6em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'school';
+
+}
+
+section .row:not(:first-of-type) {
+    font-family: 'school';
+    color: #ddd;
+}
+
+.calitem {
+    text-align: center;
+}
+
+.spaced-5 {
+    letter-spacing: 5px;
+}
+
+.spaced-10 {
+    letter-spacing: 10px;
+}
+
+.spaced-15 {
+    letter-spacing: 15px;
+}
+
+.calitem {
+    width: 100px;
+}
+
+@media print {
+    body {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .calitem {
+        width: 70pt;
+    }
+
+    section .row:not(:first-of-type) {
+        color: rgb(221, 221, 221);
+    }
+}
+
+main {
+    position: relative;
+}
+
+.faded {
+    color: rgb(221, 221, 221);
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
