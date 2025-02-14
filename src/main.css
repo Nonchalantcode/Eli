@@ -33,19 +33,31 @@
     src: url('./assets/Birthstone/Birthstone-Regular.ttf');
 }
 
-body {
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 65vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #dropdown-container {
     position: fixed;
     top: 1em;
     right: 3em;
-    z-index: 999;
+    z-index: 99999999;
 }
+
+@media (min-width: 768px) {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        max-width: 65vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #dropdown-container {
+        position: fixed;
+        top: 1em;
+        right: 3em;
+        z-index: 99999999;
+    }
+}
+
+
+
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -93,7 +105,7 @@ main {
 
 .faded {
     color: rgb(221, 221, 221);
-    
+
 }
 
 aside {
@@ -111,11 +123,13 @@ aside {
     align-items: center;
     padding-left: 1em;
     box-sizing: border-box;
+
     .wording {
         position: absolute;
         top: 8px;
         z-index: 9999;
     }
+
     &::after {
         content: '';
         height: 30px;
@@ -124,7 +138,7 @@ aside {
         z-index: 999;
         top: calc(70px * 0.5 - 30px * 0.5);
         left: 0;
-        background-color:rgb(249,249,249);
+        background-color: rgb(249, 249, 249);
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
     }
