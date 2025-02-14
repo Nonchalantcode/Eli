@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<script defer src="runtime.js"></script><script defer src="scrabble.js"></script><link href="scrabble.css" rel="stylesheet"></head>
-<body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script defer src="runtime.js"></script><script defer src="main.js"></script><script defer src="scrabble.js"></script><link href="main.css" rel="stylesheet"><link href="scrabble.css" rel="stylesheet"></head>
+
+<body>
     <main>
-        
+        <div class="dropdown" id="dropdown-container">
+            <div class="dropdown-trigger">
+                <button class="button is-primary is-light" aria-haspopup="true" aria-controls="activities-menu">
+                    <span>Actividades</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="activities-menu" role="menu">
+                <div class="dropdown-content">
+                    <div class="dropdown-item">
+                        <p class="mb-2">
+                            <a class="has-text-success" href="/">Caligrafía</a>
+                            <i class="fas fa-pencil"></i>
+                        </p>
+                        <a href="/" class="has-text-dark has-text-link">
+                            <div class="p-1">
+                                Sirve para crear una plantilla simple de caligrafía con un nombre personalizado
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="dropdown-divider" />
+                    <div class="dropdown-item">
+                        <p class="mb-2">
+                            <a class="has-text-success" href="/silabas.html">Sílabas</a>
+                            <i class="fas fa-list"></i>
+                        </p>
+                        <a href="/silabas.html" class="has-text-dark has-text-link">
+                            <div class="p-1">
+                                Sirve para imprimir combinaciones de sílabas.
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="dropdown-divider" />
+                    <a href="#" class="dropdown-item"> This is a link </a>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
