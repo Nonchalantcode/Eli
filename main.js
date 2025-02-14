@@ -9,6 +9,16 @@
  */
 (self["webpackChunkcaligrafia"] = self["webpackChunkcaligrafia"] || []).push([["main"],{
 
+/***/ "./src/fontawesome/css/all.min.css":
+/*!*****************************************!*\
+  !*** ./src/fontawesome/css/all.min.css ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://caligrafia/./src/fontawesome/css/all.min.css?");
+
+/***/ }),
+
 /***/ "./src/main.css":
 /*!**********************!*\
   !*** ./src/main.css ***!
@@ -25,7 +35,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar s0 = 'Mi nombre es Elizabeth Victoria'\nvar s1 = 'Mi mano toma el mapa'\nvar s2 = 'Mi mamita me ama'\nvar s3 = 'Mi mama me mima'\nvar s4 = 'Mi nana me cuida'\nvar s5 = 'Me tomo mi agua'\nvar s6 = 'Me tomo mi jugo'\nvar s7 = 'Me como mi merienda'\nvar words = [\n    'mano',\n    'mesa',\n    'misa',\n    'moto',\n    'música',\n    'moneda',\n    'mama',\n    'mapa',\n    'mono',\n]\n\njquery__WEBPACK_IMPORTED_MODULE_1___default().when((jquery__WEBPACK_IMPORTED_MODULE_1___default().ready)).then(function () {\n    jquery__WEBPACK_IMPORTED_MODULE_1___default()('main').append(\n        `\n            <div class=\"calligraphy-row\">\n                <p class=\"wording\">Elizabeth Victoria</p>\n            </div>\n        `\n    )\n    for (let i = 0; i <= 5; i++) {\n        jquery__WEBPACK_IMPORTED_MODULE_1___default()('main').append(\n            `\n                <div class=\"calligraphy-row\">\n                    <p class=\"faded wording\">Elizabeth Victoria</p>\n                </div>\n            `\n        )\n    }\n\n    /* $('main').append('<aside></aside>')\n    for (let i = 0; i <= 10; i++) {\n        $('main > aside').append(\n            `<p class=\"faded\">Elizabeth Victoria</p>`\n        )\n    } */\n})\n\n//# sourceURL=webpack://caligrafia/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _fontawesome_css_all_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fontawesome/css/all.min.css */ \"./src/fontawesome/css/all.min.css\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n\njquery__WEBPACK_IMPORTED_MODULE_2___default().when((jquery__WEBPACK_IMPORTED_MODULE_2___default().ready)).then(function () {\n    let dropdown = jquery__WEBPACK_IMPORTED_MODULE_2___default()('#dropdown-container')\n    let body = document.body\n\n    dropdown.on('click', function () {\n        dropdown.toggleClass('is-active', 'has-background-primary')\n    })\n    \n})\n\n//# sourceURL=webpack://caligrafia/./src/main.js?");
 
 /***/ }),
 
