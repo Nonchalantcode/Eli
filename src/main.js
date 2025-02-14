@@ -21,47 +21,21 @@ var words = [
     'mono',
 ]
 
-/**
- * 
- * @param {number | undefined} times 
- * @param {string} selector
- * @param {string} mainLetter
- * @returns {void}
- */
-function writeText(times = 5, selector = 'main', mainLetter = '') {
-    var section
-        = document.createElement('section')
-    $(selector).append(section)
-
-    console.log({times, mainLetter})
-    for (let i = 0; i < times; i++) {
-        try {
-            var letters
-                = new Array(7).fill(`<p class="calitem">${mainLetter}</p>`)
-            var lettersRow
-                = document.createElement('div')
-            lettersRow.classList.add('row')
-            $(lettersRow).append(letters)
-            $(section).append(lettersRow)
-        } catch (err) {
-            console.log(err)
-        }
-    }
-
-    /* if (mainLetter) {
-        $(section).append(`<span class='main-letter'>${mainLetter}</span>`)
-    } */
-}
-
 $.when($.ready).then(function () {
-    // $('main').append('<h1 class="text-center">Caligrafía</h1>')
-    // writeText(3, 'main', s0)
     $('main').append(
-        `<p>Elizabeth Victoria</p>`
+        `
+            <div class="calligraphy-row">
+                <p class="wording">Elizabeth Victoria</p>
+            </div>
+        `
     )
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 0; i <= 5; i++) {
         $('main').append(
-            `<p class="faded">Elizabeth Victoria</p>`
+            `
+                <div class="calligraphy-row">
+                    <p class="faded wording">Elizabeth Victoria</p>
+                </div>
+            `
         )
     }
 

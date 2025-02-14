@@ -62,56 +62,6 @@ p {
     margin-top: 0px;
 }
 
-section {
-    position: relative;
-}
-
-section > .row .calitem {
-    display: inline-block;
-    text-align: center;
-}
-
-section > * {
-    text-align: center;
-}
-
-section p:first-of-type {
-    font-family: school;
-}
-
-section > .main-letter {
-    font-size: 6em;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-family: 'school';
-
-}
-
-section .row:not(:first-of-type) {
-    font-family: 'school';
-    color: #ddd;
-}
-
-.calitem {
-    text-align: center;
-}
-
-.spaced-5 {
-    letter-spacing: 5px;
-}
-
-.spaced-10 {
-    letter-spacing: 10px;
-}
-
-.spaced-15 {
-    letter-spacing: 15px;
-}
-
-.calitem {
-    width: 100px;
-}
 
 @media print {
     body {
@@ -134,10 +84,39 @@ main {
 
 .faded {
     color: rgb(221, 221, 221);
+    
 }
 
 aside {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.calligraphy-row {
+    border: 1px solid #000;
+    margin-bottom: 1em;
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    box-sizing: border-box;
+    .wording {
+        position: absolute;
+        top: 8px;
+        z-index: 9999;
+    }
+    &::after {
+        content: '';
+        height: 30px;
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        top: calc(70px * 0.5 - 30px * 0.5);
+        left: 0;
+        background-color:rgb(249,249,249);
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
 }

@@ -31,7 +31,7 @@ $.when($.ready).then(function () {
         .trim()
         .split(' ')
     /** @type {string[][]} */
-    let coll = partition(partitionSize, combinationsColl, ['a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'o', 'u'])
+    let coll = partition(partitionSize, combinationsColl, ['a', 'e', 'i', 'o', 'u'])
     coll.forEach((syllables, idx) => {
         $('.syllables-container').append(`<div class="row-${idx + 1}"></div>`)
         let container = $(`.syllables-container .row-${idx + 1}`)
