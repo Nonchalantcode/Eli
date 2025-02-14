@@ -5,6 +5,7 @@ const path = require('path')
 module.exports = {
     entry: {
         main: './src/main.js',
+        calligraphy: './src/calligraphy',
         scrabble: './src/scrabble.js'
     },
     mode: 'development',
@@ -20,13 +21,13 @@ module.exports = {
             title: 'Caligrafia Elizabeth',
             filename: 'index.html',
             template: 'src/index.html',
-            chunks: ['main']
+            chunks: ['main', 'calligraphy']
         }),
         new HtmlWebpackPlugin({
             title: 'Sopa de letras',
-            filename: 'scrabble.html',
+            filename: 'silabas.html',
             template: 'src/index.html',
-            chunks: ['scrabble']
+            chunks: ['main', 'scrabble']
         }),
         new MiniCssExtractPlugin()
     ],
