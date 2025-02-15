@@ -1,16 +1,1 @@
-/*!**********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/calligraphy.scss ***!
-  \**********************************************************************************************************************/
-.handwriting-column {
-  min-width: 500px;
-}
-
-.controls-column {
-  min-width: 300px;
-}
-
-@media print {
-  .column.controls-column {
-    display: none;
-  }
-}
+.handwriting-column{min-width:500px}.controls-column{min-width:300px}@media print{.column.controls-column{display:none}}
