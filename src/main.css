@@ -33,11 +33,14 @@
     src: url('./assets/Birthstone/Birthstone-Regular.ttf');
 }
 
-#dropdown-container {
+#dropdowns-container {
     position: fixed;
-    top: 1em;
+    top: 5em;
     right: 3em;
-    z-index: 99999999;
+    left: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 @media (min-width: 768px) {
@@ -47,17 +50,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-    #dropdown-container {
-        position: fixed;
-        top: 1em;
-        right: 3em;
-        z-index: 99999999;
-    }
 }
-
-
-
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -80,23 +73,16 @@ h1 {
     font-family: 'school'
 }
 
-.fs-40 {
-    font-size: 40px;
+.f-kg {
+    font-family: 'kgprimary';
 }
 
-@media print {
-    body {
-        width: 100%;
-        max-width: unset;
-    }
+.f-kgdotslinedalt {
+    font-family: 'kgdotslinedalt';
+}
 
-    .calitem {
-        width: 70pt;
-    }
-
-    section .row:not(:first-of-type) {
-        color: rgb(221, 221, 221);
-    }
+.fs-40 {
+    font-size: 40px;
 }
 
 main {
@@ -118,7 +104,7 @@ aside {
     border: 1px solid #000;
     margin-bottom: 1em;
     position: relative;
-    height: 70px;
+    height: 50px;
     display: flex;
     align-items: center;
     padding-left: 1em;
@@ -126,7 +112,7 @@ aside {
 
     .wording {
         position: absolute;
-        top: 8px;
+        top: -5px;
         z-index: 9999;
     }
 
@@ -136,10 +122,29 @@ aside {
         width: 100%;
         position: absolute;
         z-index: 999;
-        top: calc(70px * 0.5 - 30px * 0.5);
+        top: calc(50px * 0.5 - 30px * 0.5);
         left: 0;
         background-color: rgb(249, 249, 249);
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
+    }
+}
+@media print {
+    body {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .calitem {
+        width: 70pt;
+    }
+
+    section .row:not(:first-of-type) {
+        color: rgb(221, 221, 221);
+    }
+
+    .page-name,
+    #dropdowns-container {
+        display: none;
     }
 }

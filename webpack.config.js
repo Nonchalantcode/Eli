@@ -11,7 +11,8 @@ module.exports = {
     mode: 'development',
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        clean: true,
     },
     devServer: {
         static: './dist'
@@ -20,14 +21,16 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Caligrafia Elizabeth',
             filename: 'index.html',
-            template: 'src/index.html',
-            chunks: ['main', 'calligraphy']
+            template: 'src/calligraphy.html',
+            chunks: ['main', 'calligraphy'],
+            inject: 'body'
         }),
         new HtmlWebpackPlugin({
             title: 'Sopa de letras',
             filename: 'silabas.html',
             template: 'src/index.html',
-            chunks: ['main', 'scrabble']
+            chunks: ['main', 'scrabble'],
+            inject: 'body'
         }),
         new MiniCssExtractPlugin()
     ],

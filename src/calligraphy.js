@@ -1,33 +1,121 @@
 
 $.when($.ready).then(function () {
-    $('main').append(`<h1 class="is-size-3-mobile is-size-1 has-text-centered mb-6">Caligrafía</h1>`)
-    var s0 = 'Mi nombre es Elizabeth Victoria'
-    var s1 = 'Mi mano toma el mapa'
-    var s2 = 'Mi mamita me ama'
-    var s3 = 'Mi mama me mima'
-    var s4 = 'Mi nana me cuida'
-    var s5 = 'Me tomo mi agua'
-    var s6 = 'Me tomo mi jugo'
-    var s7 = 'Me como mi merienda'
-    var words = [
-        'mano',
-        'mesa',
-        'misa',
-        'moto',
-        'música',
-        'moneda',
-        'mama',
-        'mapa',
-        'mono',
-    ]
-    for (let i = 0; i <= 5; i++) {
-        $('main').append(
-            `
-                <div class="calligraphy-row">
-                    <p class="cursive fs-40 faded wording">Elizabeth Victoria</p>
+    try {
+        $('main').append(`<h1 class="page-name is-size-3-mobile is-size-1 has-text-centered mb-6">Caligrafía</h1>`)
+        document.querySelector('.page-name').contentEditable = 'false'
+        document.querySelector('main').contentEditable = 'plaintext-only'
+        let fontRadioButtons = $('.radios.font input')
+        let colorRadioButtons = $('.radios.color input')
 
-                </div>
-            `
-        )
+        let currentFont = [...document.querySelectorAll('.radios.font input')]
+            .filter(el => {
+                /** @type {HTMLInputElement} */
+                let element = el
+                return element.hasAttribute('checked')
+            })
+            .pop()
+            .value;
+
+        let colorsOptions = [...document.querySelectorAll('.radios.color input')]
+        let currentColor = colorsOptions
+            .filter(el => {
+                /** @type {HTMLInputElement} */
+                let element = el
+                return element.hasAttribute('checked')
+            })
+            .pop()
+            .value;
+
+        let currentFontSize = 40
+            
+        document
+            .querySelectorAll('.radios.color input')
+            .forEach(item => {
+                try {
+                    /** @type {HTMLInputElement} */
+                    let el = item
+                    let span = el.nextElementSibling
+                    span.classList.add('color-choice')
+                    span.style.display = 'inline-block'
+                    span.style.backgroundColor = '#' + el.value
+                    span.style.width = '30px'
+                    span.style.height = '30px'
+                    span.style.border = '1px solid #000'
+                } catch (err) {
+                    console.log(err)
+                }
+            });
+    
+        fontRadioButtons.on('change', function (ev) {
+            /** @type {HTMLInputElement} */
+            let input = ev.target
+            console.log({value: input.value})
+            $('.calligraphy-row .wording')
+                .removeClass(`f-${currentFont}`)
+                .addClass(`f-${input.value}`)
+    
+            currentFont = input.value
+        })
+
+        colorRadioButtons.on('change', function(ev) {
+            document
+                .querySelectorAll('.calligraphy-row .wording')
+                .forEach(item => {
+                    /** @type {HTMLElement} */
+                    let el = item
+                    el.style.color = '#' + ev.target.value
+                })
+        })
+    
+        for (let i = 0; i <= 5; i++) {
+            $('main').append(
+                `
+                    <div class="calligraphy-row">
+                        <p style="color: #${currentColor}; font-size: ${currentFontSize}px;" class="cursive fs-40 faded wording f-${currentFont}">Elizabeth Victoria</p>
+                    </div>
+                `
+            )
+        }
+    
+        let dropdown = $('#controls')
+    
+        dropdown.on('click', function () {
+            dropdown.toggleClass('is-active', 'has-background-primary')
+        })
+
+        $('#font-size').on('change', function(ev) {
+            /** @type {HTMLInputElement} */
+            let target = ev.target
+            let v = target.value
+            document
+                .querySelectorAll('.calligraphy-row .wording')
+                .forEach(item => {
+                    /** @type {HTMLElement} */
+                    let el = item
+                    el.style.fontSize = v + 'px'
+                    currentFontSize = v
+                })
+        })
+
+        $('#valignment').on('change', function(ev) {
+            /** @type {HTMLInputElement} */
+            let target = ev.target
+            let v = target.value
+            document
+                .querySelectorAll('.calligraphy-row .wording')
+                .forEach(item => {
+                    /** @type {HTMLElement} */
+                    let el = item
+                    el.style.top = v + 'px'
+                })
+        })
+
+        $("#print").on('click', function() {
+            window.print()
+        })
+
+    } catch (err) {
+        console.log({err})
     }
+    
 })

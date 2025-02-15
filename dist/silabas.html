@@ -10,14 +10,14 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script defer src="runtime.js"></script><script defer src="main.js"></script><script defer src="scrabble.js"></script><link href="main.css" rel="stylesheet"><link href="scrabble.css" rel="stylesheet"></head>
+<link href="main.css" rel="stylesheet"><link href="scrabble.css" rel="stylesheet"></head>
 
 <body>
     <main>
-        <div class="dropdown" id="dropdown-container">
+        <div class="dropdown is-right" id="dropdown-container">
             <div class="dropdown-trigger">
                 <button class="button is-primary is-light" aria-haspopup="true" aria-controls="activities-menu">
-                    <span>Actividades</span>
+                    <span>Enlaces</span>
                     <span class="icon is-small">
                         <i class="fas fa-bars" aria-hidden="true"></i>
                     </span>
@@ -27,7 +27,7 @@
                 <div class="dropdown-content">
                     <div class="dropdown-item">
                         <p class="mb-2">
-                            <a class="has-text-success" href="/Eli">Caligrafía</a>
+                            <a class="has-text-success" href="/Eli">Entrar a caligrafía</a>
                             <i class="fas fa-pencil"></i>
                         </p>
                         <a href="/Eli" class="has-text-dark has-text-link">
@@ -39,7 +39,7 @@
                     <hr class="dropdown-divider" />
                     <div class="dropdown-item">
                         <p class="mb-2">
-                            <a class="has-text-success" href="/Eli/silabas.html">Sílabas</a>
+                            <a class="has-text-success" href="/Eli/silabas.html">Entrar a sílabas</a>
                             <i class="fas fa-list"></i>
                         </p>
                         <a href="/Eli/silabas.html" class="has-text-dark has-text-link">
@@ -48,12 +48,10 @@
                             </div>
                         </a>
                     </div>
-                    <hr class="dropdown-divider" />
-                    <a href="#" class="dropdown-item"> This is a link </a>
                 </div>
             </div>
         </div>
     </main>
-</body>
+<script defer src="runtime.js"></script><script defer src="main.js"></script><script defer src="scrabble.js"></script></body>
 
 </html>

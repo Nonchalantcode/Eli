@@ -19,7 +19,7 @@ function partition(size, coll, pad = []) {
   }
 
 $.when($.ready).then(function () {
-  $('main').append(`<h1 class="is-size-3-mobile is-size-1 has-text-centered mb-6">Sílabas</h1>`)
+  $('main').append(`<h1 class="page-name is-size-3-mobile is-size-1 has-text-centered mb-6">Sílabas</h1>`)
     /** @type {string} */
     let combinations = syllableCombinations
 
