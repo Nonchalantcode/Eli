@@ -1,4 +1,4 @@
-import './main.css'
+import './styles/main.scss'
 import './fontawesome/css/all.min.css'
 import $ from 'jquery'
 

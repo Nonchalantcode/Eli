@@ -1,6 +1,6 @@
-import './main.css'
-import './scrabble.css'
 import $ from 'jquery'
+import './styles/main.scss'
+import './styles/scrabble.scss'
 import syllableCombinations from './sorted_combinations.txt'
 
 function partition(size, coll, pad = []) {

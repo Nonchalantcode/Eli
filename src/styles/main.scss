@@ -1,47 +1,14 @@
-@font-face {
-    font-family: 'kgprimary';
-    src: url('./assets/KGPrimaryDots.ttf');
-}
-
-@font-face {
-    font-family: 'kgdotslined';
-    src: url('./assets/KGPrimaryDotsLined.ttf');
-}
-
-@font-face {
-    font-family: 'kgdotslinedalt';
-    src: url('./assets/KGPrimaryDotsLinedAlt.ttf');
-}
-
-@font-face {
-    font-family: 'school';
-    src: url('./assets/SchoolScriptDashed.ttf');
-}
-
-@font-face {
-    font-family: 'pacifico';
-    src: url('./assets/Pacifico/Pacifico-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'birthstone';
-    src: url('./assets/Birthstone/Birthstone-Regular.ttf');
-}
+@use 'fonts';
 
 #dropdowns-container {
-    position: fixed;
-    top: 5em;
-    right: 3em;
-    left: unset;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
 
 @media (min-width: 768px) {
     body {
         font-family: 'Courier New', Courier, monospace;
-        max-width: 65vw;
+        max-width: 90vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -49,35 +16,6 @@
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.text-center {
-    text-align: center;
-}
-
-
-.f-birthstone {
-    font-family: 'birthstone';
-}
-
-.f-pacifico {
-    font-family: 'pacifico'
-}
-
-.f-school {
-    font-family: 'school'
-}
-
-.f-kg {
-    font-family: 'kgprimary';
-}
-
-.f-kgdotslinedalt {
-    font-family: 'kgdotslinedalt';
-}
-
-.fs-40 {
-    font-size: 40px;
 }
 
 main {
@@ -124,6 +62,7 @@ aside {
         border-bottom: 1px solid #ccc;
     }
 }
+
 @media print {
     body {
         width: 100%;

@@ -37,8 +37,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
+                test: /\.s?css/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(woff|ttf|woff2|eot|otf)/i,

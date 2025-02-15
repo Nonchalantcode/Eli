@@ -10,16 +10,16 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<link href="main.css" rel="stylesheet"></head>
+<link href="main.css" rel="stylesheet"><link href="calligraphy.css" rel="stylesheet"></head>
 
 <body>
-    <div class="columns">
-        <div class="column">
+    <div class="columns is-mobile">
+        <div class="column is-three-quarters handwriting-column">
             <main></main>
         </div>
-        <div class="column">
+        <div class="column has-background-success-light mt-4 controls-column">
             <div id="dropdowns-container">
-                <div class="dropdown is-right mb-2" id="dropdown-container">
+                <div class="dropdown is-right mb-2 is-justify-content-flex-end" id="dropdown-container">
                     <div class="dropdown-trigger">
                         <button class="button is-primary is-light" aria-haspopup="true" aria-controls="activities-menu">
                             <span>Enlaces</span>
@@ -85,42 +85,42 @@
                 </div>
                 <hr />
                 <div class="field pt-1 pl-2">
-                    <label class="label">Color de letra</label>
+                    <label class="label">Color de texto</label>
                     <div class="control">
                         <div class="radios color">
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="F8F9FA" />
                                 <span></span>
                             </label>
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="E9ECEF" />
                                 <span></span>
                             </label>
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="DEE2E6" />
                                 <span></span>
                             </label>
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="CED4DA" checked />
                                 <span></span>
                             </label>
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="ADB5BD" />
                                 <span></span>
                             </label>
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="6C757D" />
                                 <span></span>
                             </label>
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="495057" />
                                 <span></span>
                             </label>
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="343A40" />
                                 <span></span>
                             </label>
-                            <label class="radio">
+                            <label class="radio is-flex is-flex-direction-row is-align-content-center">
                                 <input type="radio" name="color" value="212529" />
                                 <span></span>
                             </label>
@@ -129,19 +129,21 @@
                 </div>
                 <hr />
                 <div class="field pt-1 pl-2">
-                    <label>Tamaño de letra</label>
+                    <label class="label">Tamaño de letra</label>
                     <div class="control">
                         <input type="number" name="size" id="font-size" value="40" min="15" max="100" />
                     </div>
                 </div>
+                <hr />
                 <div class="field pt-1 pl-2">
                     <label>Alineación vertical</label>
                     <div class="control">
                         <input type="number" name="alignment" id="valignment" value="8" min="-100" max="100" />
                     </div>
                 </div>
+                <hr />
                 <div class="field pt-1 pl-2">
-                    <label>Imprimir/Guardar</label>
+                    <label class="label">Imprimir/Guardar</label>
                     <div class="control">
                         <button class="button" id="print">
                             <span class="icon is-small">

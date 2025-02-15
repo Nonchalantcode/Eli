@@ -1,3 +1,4 @@
+import './styles/calligraphy.scss'
 
 $.when($.ready).then(function () {
     try {
@@ -35,7 +36,7 @@ $.when($.ready).then(function () {
                     /** @type {HTMLInputElement} */
                     let el = item
                     let span = el.nextElementSibling
-                    span.classList.add('color-choice')
+                    span.classList.add('color-choice', 'ml-2')
                     span.style.display = 'inline-block'
                     span.style.backgroundColor = '#' + el.value
                     span.style.width = '30px'
@@ -49,7 +50,7 @@ $.when($.ready).then(function () {
         fontRadioButtons.on('change', function (ev) {
             /** @type {HTMLInputElement} */
             let input = ev.target
-            console.log({value: input.value})
+            
             $('.calligraphy-row .wording')
                 .removeClass(`f-${currentFont}`)
                 .addClass(`f-${input.value}`)

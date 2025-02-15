@@ -1,0 +1,15 @@
+.handwriting-column {
+    min-width: 500px;
+}
+
+.controls-column {
+    min-width: 300px;
+}
+
+@media print {
+    .column {
+        &.controls-column {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'kgprimary';
+    src: url('../assets/KGPrimaryDots.ttf');
+}
+
+@font-face {
+    font-family: 'kgdotslined';
+    src: url('../assets/KGPrimaryDotsLined.ttf');
+}
+
+@font-face {
+    font-family: 'kgdotslinedalt';
+    src: url('../assets/KGPrimaryDotsLinedAlt.ttf');
+}
+
+@font-face {
+    font-family: 'school';
+    src: url('../assets/SchoolScriptDashed.ttf');
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url('../assets/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'birthstone';
+    src: url('../assets/Birthstone/Birthstone-Regular.ttf');
+}
+
+.f-birthstone {
+    font-family: 'birthstone';
+}
+
+.f-pacifico {
+    font-family: 'pacifico'
+}
+
+.f-school {
+    font-family: 'school'
+}
+
+.f-kg {
+    font-family: 'kgprimary';
+}
+
+.f-kgdotslinedalt {
+    font-family: 'kgdotslinedalt';
+}
+
+.fs-40 {
+    font-size: 40px;
+}
