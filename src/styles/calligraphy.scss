@@ -1,13 +1,95 @@
-.handwriting-column {
-    min-width: 500px;
+body {
+    padding-top: 1em;
 }
 
-.controls-column {
-    min-width: 300px;
+$row-height: 50px;
+$row-guide-height: $row-height - 20px;
+
+.column {
+    &.handwriting-column {
+        main {
+            width: 21cm;
+            max-width: 794px;
+            line-height: 1;
+            border: 1px solid #ddd;
+            padding: 20px;
+            font-size: 14px;
+            line-height: 0.5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slight shadow for screen effect */
+            .page-name {
+                line-height: 1;
+            }
+        }
+    
+        .calligraphy-row {
+            border: 1px solid #000;
+            position: relative;
+            height: $row-height;
+            display: flex;
+            align-items: center;
+            padding-left: 1em;
+            box-sizing: border-box;
+    
+            .wording {
+                position: absolute;
+                position: relative;
+                top: 0px;
+                z-index: 9999;
+            }
+    
+            &::after {
+                content: '';
+                height: $row-guide-height;
+                width: 100%;
+                position: absolute;
+                z-index: 999;
+                top: calc($row-height * 0.5 - $row-guide-height * 0.5);
+                left: 0;
+                background-color: rgb(249, 249, 249);
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                border-left: none;
+                border-right: none;
+            }
+        }
+    
+        .calligraphy-row {
+            line-height: 0;
+        }
+    }
+
+    /* &.controls-column {
+        height: 100vh;
+    } */
+    &.controls-column {
+        height: 100vh;
+        overflow: scroll;
+        min-width: 300px;
+        .radios.font {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 3em;
+    }
 }
 
 @media print {
     .column {
+        &.handwriting-column {
+            width: 100% !important;
+            main {
+                box-shadow: none;
+                border: none;
+                padding: none;
+            }
+        }
+
         &.controls-column {
             display: none;
         }

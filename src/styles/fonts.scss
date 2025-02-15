@@ -1,53 +1,171 @@
 @font-face {
-    font-family: 'kgprimary';
-    src: url('../assets/KGPrimaryDots.ttf');
+   font-family: "Birthstone-Regular.ttf";
+   src: url('../assets/Birthstone-Regular.ttf');
 }
-
 @font-face {
-    font-family: 'kgdotslined';
-    src: url('../assets/KGPrimaryDotsLined.ttf');
+   font-family: "KGPrimaryDotsLinedAlt.ttf";
+   src: url('../assets/KGPrimaryDotsLinedAlt.ttf');
 }
-
 @font-face {
-    font-family: 'kgdotslinedalt';
-    src: url('../assets/KGPrimaryDotsLinedAlt.ttf');
+   font-family: "KGPrimaryDotsLined.ttf";
+   src: url('../assets/KGPrimaryDotsLined.ttf');
 }
-
 @font-face {
-    font-family: 'school';
-    src: url('../assets/SchoolScriptDashed.ttf');
+   font-family: "KGPrimaryDots.ttf";
+   src: url('../assets/KGPrimaryDots.ttf');
 }
-
 @font-face {
-    font-family: 'pacifico';
-    src: url('../assets/Pacifico/Pacifico-Regular.ttf');
+   font-family: "KGPrimaryLinedNOSPACE.ttf";
+   src: url('../assets/KGPrimaryLinedNOSPACE.ttf');
 }
-
 @font-face {
-    font-family: 'birthstone';
-    src: url('../assets/Birthstone/Birthstone-Regular.ttf');
+   font-family: "KGPrimaryPenmanship2.ttf";
+   src: url('../assets/KGPrimaryPenmanship2.ttf');
+}
+@font-face {
+   font-family: "KGPrimaryPenmanshipAlt.ttf";
+   src: url('../assets/KGPrimaryPenmanshipAlt.ttf');
+}
+@font-face {
+   font-family: "KGPrimaryPenmanshipLined.ttf";
+   src: url('../assets/KGPrimaryPenmanshipLined.ttf');
+}
+@font-face {
+   font-family: "KGPrimaryPenmanship.ttf";
+   src: url('../assets/KGPrimaryPenmanship.ttf');
+}
+@font-face {
+   font-family: "LearningCurveDashed.ttf";
+   src: url('../assets/LearningCurveDashed.ttf');
+}
+@font-face {
+   font-family: "LearningCurve.ttf";
+   src: url('../assets/LearningCurve.ttf');
+}
+@font-face {
+   font-family: "Letters_for_Learners_Dots.ttf";
+   src: url('../assets/Letters_for_Learners_Dots.ttf');
+}
+@font-face {
+   font-family: "Letters_for_Learners_Lined_Dots.ttf";
+   src: url('../assets/Letters_for_Learners_Lined_Dots.ttf');
+}
+@font-face {
+   font-family: "Letters_for_Learners_Lined.ttf";
+   src: url('../assets/Letters_for_Learners_Lined.ttf');
+}
+@font-face {
+   font-family: "Letters_for_Learners_Outline_Bold.ttf";
+   src: url('../assets/Letters_for_Learners_Outline_Bold.ttf');
+}
+@font-face {
+   font-family: "Letters_for_Learners_Outline_Light.ttf";
+   src: url('../assets/Letters_for_Learners_Outline_Light.ttf');
+}
+@font-face {
+   font-family: "Letters_for_Learners_Outline.ttf";
+   src: url('../assets/Letters_for_Learners_Outline.ttf');
+}
+@font-face {
+   font-family: "Letters_for_Learners.ttf";
+   src: url('../assets/Letters_for_Learners.ttf');
+}
+@font-face {
+   font-family: "Little_Daisy.ttf";
+   src: url('../assets/Little_Daisy.ttf');
+}
+@font-face {
+   font-family: "Little_Days_Alt.ttf";
+   src: url('../assets/Little_Days_Alt.ttf');
+}
+@font-face {
+   font-family: "Little_days.ttf";
+   src: url('../assets/Little_days.ttf');
+}
+@font-face {
+   font-family: "Pacifico-Regular.ttf";
+   src: url('../assets/Pacifico-Regular.ttf');
+}
+@font-face {
+   font-family: "RalewayDots-Regular.ttf";
+   src: url('../assets/RalewayDots-Regular.ttf');
+}
+@font-face {
+   font-family: "SchoolScriptDashed.ttf";
+   src: url('../assets/SchoolScriptDashed.ttf');
 }
 
-.f-birthstone {
-    font-family: 'birthstone';
-}
 
-.f-pacifico {
-    font-family: 'pacifico'
-}
 
-.f-school {
-    font-family: 'school'
+.f-Birthstone-Regular {
+   font-family: 'Birthstone-Regular.ttf';
 }
-
-.f-kg {
-    font-family: 'kgprimary';
+.f-KGPrimaryDotsLinedAlt {
+   font-family: 'KGPrimaryDotsLinedAlt.ttf';
 }
-
-.f-kgdotslinedalt {
-    font-family: 'kgdotslinedalt';
+.f-KGPrimaryDotsLined {
+   font-family: 'KGPrimaryDotsLined.ttf';
 }
-
-.fs-40 {
-    font-size: 40px;
+.f-KGPrimaryDots {
+   font-family: 'KGPrimaryDots.ttf';
+}
+.f-KGPrimaryLinedNOSPACE {
+   font-family: 'KGPrimaryLinedNOSPACE.ttf';
+}
+.f-KGPrimaryPenmanship2 {
+   font-family: 'KGPrimaryPenmanship2.ttf';
+}
+.f-KGPrimaryPenmanshipAlt {
+   font-family: 'KGPrimaryPenmanshipAlt.ttf';
+}
+.f-KGPrimaryPenmanshipLined {
+   font-family: 'KGPrimaryPenmanshipLined.ttf';
+}
+.f-KGPrimaryPenmanship {
+   font-family: 'KGPrimaryPenmanship.ttf';
+}
+.f-LearningCurveDashed {
+   font-family: 'LearningCurveDashed.ttf';
+}
+.f-LearningCurve {
+   font-family: 'LearningCurve.ttf';
+}
+.f-Letters_for_Learners_Dots {
+   font-family: 'Letters_for_Learners_Dots.ttf';
+}
+.f-Letters_for_Learners_Lined_Dots {
+   font-family: 'Letters_for_Learners_Lined_Dots.ttf';
+}
+.f-Letters_for_Learners_Lined {
+   font-family: 'Letters_for_Learners_Lined.ttf';
+}
+.f-Letters_for_Learners_Outline_Bold {
+   font-family: 'Letters_for_Learners_Outline_Bold.ttf';
+}
+.f-Letters_for_Learners_Outline_Light {
+   font-family: 'Letters_for_Learners_Outline_Light.ttf';
+}
+.f-Letters_for_Learners_Outline {
+   font-family: 'Letters_for_Learners_Outline.ttf';
+}
+.f-Letters_for_Learners {
+   font-family: 'Letters_for_Learners.ttf';
+}
+.f-Little_Daisy {
+   font-family: 'Little_Daisy.ttf';
+}
+.f-Little_Days_Alt {
+   font-family: 'Little_Days_Alt.ttf';
+}
+.f-Little_days {
+   font-family: 'Little_days.ttf';
+}
+.f-Pacifico-Regular {
+   font-family: 'Pacifico-Regular.ttf';
+}
+.f-RalewayDots-Regular {
+   font-family: 'RalewayDots-Regular.ttf';
+}
+.f-SchoolScriptDashed {
+   font-family: 'SchoolScriptDashed.ttf';
 }

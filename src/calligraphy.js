@@ -1,8 +1,29 @@
 import './styles/calligraphy.scss'
+import fontNames from './font_names.txt'
+
+/** @type {string} */
+let allFonts = fontNames
+let fontsColl = allFonts
+    .trim()
+    .split('\n')
 
 $.when($.ready).then(function () {
     try {
-        $('main').append(`<h1 class="page-name is-size-3-mobile is-size-1 has-text-centered mb-6">Caligrafía</h1>`)
+        $('main').append(`<h1 class="page-name is-size-3-mobile is-size-1 has-text-centered">Caligrafía</h1>`)
+
+        let radioFontOptions = $('.radios.font')
+        
+        fontsColl.forEach(fontOption => {
+            radioFontOptions.append(`
+                <label class="has-text-black radio">
+                    <input type="radio" name="font" value="${fontOption}" />
+                    ${fontOption}
+                </label>
+            `)
+        })
+
+        document.querySelector('.radios.font label > input').setAttribute('checked', 'true')
+
         document.querySelector('.page-name').contentEditable = 'false'
         document.querySelector('main').contentEditable = 'plaintext-only'
         let fontRadioButtons = $('.radios.font input')
@@ -27,7 +48,7 @@ $.when($.ready).then(function () {
             .pop()
             .value;
 
-        let currentFontSize = 40
+        let currentFontSize = 30
             
         document
             .querySelectorAll('.radios.color input')
@@ -72,7 +93,7 @@ $.when($.ready).then(function () {
             $('main').append(
                 `
                     <div class="calligraphy-row">
-                        <p style="color: #${currentColor}; font-size: ${currentFontSize}px;" class="cursive fs-40 faded wording f-${currentFont}">Elizabeth Victoria</p>
+                        <p style="color: #${currentColor}; font-size: ${currentFontSize}px;" class="cursive wording f-${currentFont}">Elizabeth Victoria</p>
                     </div>
                 `
             )
