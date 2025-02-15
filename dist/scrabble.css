@@ -2,11 +2,6 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/main.css ***!
   \****************************************************************/
 @font-face {
-    font-family: 'raleway-dotted';
-    src: url(fc475d20cadccf5fe744.ttf);
-}
-
-@font-face {
     font-family: 'kgprimary';
     src: url(0a379509ef68955a060b.ttf);
 }

@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'raleway-dotted';
-    src: url('./assets/RalewayDots-Regular.ttf');
-}
-
-@font-face {
     font-family: 'kgprimary';
     src: url('./assets/KGPrimaryDots.ttf');
 }
