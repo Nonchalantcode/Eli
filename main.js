@@ -19,13 +19,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/main.css":
-/*!**********************!*\
-  !*** ./src/main.css ***!
-  \**********************/
+/***/ "./src/styles/main.scss":
+/*!******************************!*\
+  !*** ./src/styles/main.scss ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://caligrafia/./src/main.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://caligrafia/./src/styles/main.scss?");
 
 /***/ }),
 
@@ -35,7 +35,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _fontawesome_css_all_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fontawesome/css/all.min.css */ \"./src/fontawesome/css/all.min.css\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n\njquery__WEBPACK_IMPORTED_MODULE_2___default().when((jquery__WEBPACK_IMPORTED_MODULE_2___default().ready)).then(function () {\n    let dropdown = jquery__WEBPACK_IMPORTED_MODULE_2___default()('#dropdown-container')\n\n    dropdown.on('click', function (ev) {\n        ev.stopPropagation()\n        dropdown.toggleClass('is-active', 'has-background-primary')\n    })\n    \n})\n\n//# sourceURL=webpack://caligrafia/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _fontawesome_css_all_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fontawesome/css/all.min.css */ \"./src/fontawesome/css/all.min.css\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n\njquery__WEBPACK_IMPORTED_MODULE_2___default().when((jquery__WEBPACK_IMPORTED_MODULE_2___default().ready)).then(function () {\n    let dropdown = jquery__WEBPACK_IMPORTED_MODULE_2___default()('#dropdown-container')\n\n    dropdown.on('click', function (ev) {\n        ev.stopPropagation()\n        dropdown.toggleClass('is-active', 'has-background-primary')\n    })\n    \n})\n\n//# sourceURL=webpack://caligrafia/./src/main.js?");
 
 /***/ }),
 
