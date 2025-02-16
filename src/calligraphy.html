@@ -15,9 +15,22 @@
 <body class="has-background-white">
     <div class="columns is-mobile mb-0">
         <div class="column is-three-quarters handwriting-column">
-            <main></main>
+            <main>
+                <button class="mx-1 add-row-cta button is-primary has-text-white-bis is-pulled-right">
+                    <span class="icon is-small">
+                        <i class="fas fa-pencil"></i>
+                    </span>
+                    <span>Añadir renglón</span>
+                </button>
+                <button class="mx-1 remove-row-cta button is-danger has-text-white-bis is-pulled-right">
+                    <span class="icon is-small">
+                        <i class="fas fa-eraser"></i>
+                    </span>
+                    <span>Borrar renglón</span>
+                </button>
+            </main>
         </div>
-        <div class="column has-background-success-light mt-4 controls-column">
+        <div class="column mt-4 controls-column">
             <div id="dropdowns-container">
                 <div class="dropdown is-right mb-2 is-justify-content-flex-end" id="dropdown-container">
                     <div class="dropdown-trigger">
@@ -57,29 +70,10 @@
                     </div>
                 </div>
                 <div class="field pt-2 pl-2">
-                    <label class="label has-text-black">Nombre de letra</label>
+                    <label class="label has-text-black">Nombre de letra / fuente</label>
                     <div class="control">
                         <div class="radios font">
-                            <!-- <label class="has-text-black radio">
-                                <input type="radio" name="font" value="pacifico" checked />
-                                Pacifico
-                            </label>
-                            <label class="has-text-black radio">
-                                <input type="radio" name="font" value="school" />
-                                School
-                            </label>
-                            <label class="has-text-black radio">
-                                <input type="radio" name="font" value="birthstone" />
-                                Birthstone
-                            </label>
-                            <label class="has-text-black radio">
-                                <input type="radio" name="font" value="kg" />
-                                KG
-                            </label>
-                            <label class="has-text-black radio">
-                                <input type="radio" name="font" value="kgdotslinedalt" />
-                                KG Dots Line Alt
-                            </label> -->
+                            
                         </div>
                     </div>
                 </div>
@@ -101,7 +95,7 @@
                                 <span></span>
                             </label>
                             <label class="has-text-black radio is-flex is-flex-direction-row is-align-content-center">
-                                <input type="radio" name="color" value="CED4DA" checked />
+                                <input type="radio" name="color" value="CED4DA" />
                                 <span></span>
                             </label>
                             <label class="has-text-black radio is-flex is-flex-direction-row is-align-content-center">
@@ -121,7 +115,7 @@
                                 <span></span>
                             </label>
                             <label class="has-text-black radio is-flex is-flex-direction-row is-align-content-center">
-                                <input type="radio" name="color" value="212529" />
+                                <input type="radio" name="color" value="212529" checked />
                                 <span></span>
                             </label>
                         </div>
@@ -145,7 +139,7 @@
                 <div class="field pt-1 pl-2">
                     <label class="label has-text-black">Imprimir/Guardar</label>
                     <div class="control">
-                        <button class="button" id="print">
+                        <button class="button is-success is-outlined" id="print">
                             <span class="icon is-small">
                                 <i class="fas fa-print"></i>
                             </span>

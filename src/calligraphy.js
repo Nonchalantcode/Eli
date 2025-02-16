@@ -9,7 +9,7 @@ let fontsColl = allFonts
 
 $.when($.ready).then(function () {
     try {
-        $('main').append(`<h1 class="page-name is-size-3-mobile is-size-1 has-text-centered">Caligrafía</h1>`)
+        $('main').append(`<h1 class="page-name is-size-3-mobile is-size-1">Caligrafía</h1>`)
 
         let radioFontOptions = $('.radios.font')
 
@@ -89,22 +89,30 @@ $.when($.ready).then(function () {
                 })
         })
 
-        for (let i = 0; i <= 5; i++) {
+        function appendRow() {
             $('main').append(
                 `
-                    <div class="calligraphy-row mb-2">
-                        <p contenteditable="true" style="color: #${currentColor}; font-size: ${currentFontSize}px;" class="cursive wording f-${currentFont}">Elizabeth Victoria</p>
+                    <div class="calligraphy-row mb-5 is-relative is-clickable">
+                        <p contenteditable="true" style="color: #${currentColor}; font-size: ${currentFontSize}px;" class="cursive wording f-${currentFont}">Escribir texto aquí</p>
                     </div>
                 `
             )
         }
+
+        appendRow()
+
+        $('.add-row-cta').on('click', () => { appendRow() })
+        $('.remove-row-cta').on('click', () => {
+            let row = document.querySelector('.calligraphy-row:last-of-type')
+            row.parentElement.removeChild(row)
+        })
+        
 
         let dropdown = $('#controls')
 
         dropdown.on('click', function () {
             dropdown.toggleClass('is-active')
             dropdown.toggleClass('has-background-primary')
-            // dropdown.toggleClass('is-active', 'has-background-primary')
         })
 
         $('#font-size').on('change', function (ev) {
