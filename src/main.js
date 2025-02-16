@@ -9,7 +9,9 @@ $.when($.ready).then(function () {
 
     dropdown.on('click', function (ev) {
         ev.stopPropagation()
-        dropdown.toggleClass('is-active', 'has-background-primary')
+        dropdown.toggleClass('is-active')
+        dropdown.toggleClass('has-background-primary')
+        // dropdown.toggleClass('is-active', 'has-background-primary')
     })
     
 })
